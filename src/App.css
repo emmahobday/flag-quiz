@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Viga', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -24,6 +31,16 @@
   color: white;
 }
 
+h1 {
+  background-color: indigo;
+  color: #ffdb58;
+  width: 80vw;
+  margin: 0;
+  padding: 0.75em 0px;
+  border: 3px solid #ffdb58;
+  border-bottom: none;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +52,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.gameArea {
+  height: 70vh;
+  width: 80vw;
+  border: 3px solid #ffdb58;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameInPlay {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.gameboard {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60vh;
+}
+
+.gameFlag {
+  width: 70%;
+  /* border: 2px solid hotpink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag {
+  width: 90%;
+  max-height: 80%;
+}
+
+.gameQ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3vw;
+  width: 100%;
+}
+
+.q {
+  color: #ffdb58;
+}
+
+.small {
+  font-size: 0.5em;
+  margin: 5px 0px;
+}
+
+.gameChoices {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid lime; */
+}
+
+.startButton {
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid indigo;
+  
+  background-color: indigo;
+  color: #ffdb58;
+  padding: 0.5em;
+  border-radius: 10px;
+  margin: 0.8em;
+}
+
+.startButton:hover {
+  background-color: #ffdb58;
+  color: indigo;
+}
+
+.choice {
+  font-size: 20px;
+  width: 70%;
+  padding: 1vw;
+  margin: 1vw;
+  background-color: indigo;
+  color: #ffdb58;
+  font-weight: bold;
+}
+
+.choice:focus {
+  outline: none;
+}
+
+.choice:hover {
+  background-color: #ffdb58;
+  color: indigo;
+}
+
+.true, .true:hover {
+  background-color: green;
+}
+
+.false, .false:hover {
+  background-color: red;
+}
+
+h2, h3 {
+  margin: 0.2em;
 }
